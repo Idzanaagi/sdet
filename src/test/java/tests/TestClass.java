@@ -36,14 +36,14 @@ public class TestClass extends WebdriverSetting {
         productsPage.buyItem();
         productsPage.goToCart();
 
-        yourCartPage.submitCheckout();
+        yourCartPage.clickCheckout();
 
         yourInformationPage.fillFirstNameField();
         yourInformationPage.fillLastNameField();
         yourInformationPage.fillCodeField();
         yourInformationPage.submitForm();
 
-        overviewPage.submitFinish();
+        overviewPage.clickFinish();
 
         completePage.checkCompleteHeader();
 

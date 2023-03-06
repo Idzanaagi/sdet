@@ -13,7 +13,7 @@ public class OverviewPage {
     @FindBy(css = "[data-test='finish']")
     private WebElement btnFinish;
 
-    public void submitFinish() {
+    public void clickFinish() {
         btnFinish.click();
     }
 }

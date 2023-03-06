@@ -13,7 +13,7 @@ public class YourCartPage {
     @FindBy(xpath = "//*[@id=\"checkout\"]")
     private WebElement btnCheckout;
 
-    public void submitCheckout() {
+    public void clickCheckout() {
         btnCheckout.click();
     }
 }
