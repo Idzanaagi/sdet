@@ -11,8 +11,14 @@ public class CompletePage {
         this.driver = driver;
     }
 
+    private String expectedUrl = "https://www.saucedemo.com/checkout-complete.html";
+
     @FindBy(className = "complete-header")
     private WebElement completePurchaseHeader ;
+
+    public void checkCurrentUrl() {
+        Assertions.assertEquals(driver.getCurrentUrl(), expectedUrl);
+    }
 
     public void checkCompleteHeader() {
         Assertions.assertEquals("Thank you for your order!", completePurchaseHeader.getText());

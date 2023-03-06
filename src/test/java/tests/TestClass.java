@@ -45,6 +45,7 @@ public class TestClass extends WebdriverSetting {
 
         overviewPage.clickFinish();
 
+        completePage.checkCurrentUrl();
         completePage.checkCompleteHeader();
 
     }
