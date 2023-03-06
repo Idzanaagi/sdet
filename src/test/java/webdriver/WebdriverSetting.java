@@ -11,6 +11,7 @@ public class WebdriverSetting {
     public WebDriver driver;
     @BeforeEach
     public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\on8d\\Downloads\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
         WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
