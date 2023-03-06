@@ -12,6 +12,8 @@ public class LoginPage {
     }
     private String fakeUserData = "test";
 
+    private String expectedErrorMessage = "Epic sadface: Username and password do not match any user in this service";
+
     @FindBy(css = "[data-test='username']")
     private WebElement usernameField;
     @FindBy(css = "[data-test='password']")
@@ -33,6 +35,6 @@ public class LoginPage {
         btnLogin.click();
     }
     public void checkErrorMessage() {
-        Assertions.assertEquals("Epic sadface: Username and password do not match any user in this service", errorMessage.getText());
+        Assertions.assertEquals(expectedErrorMessage, errorMessage.getText());
     }
 }

@@ -12,6 +12,7 @@ public class CompletePage {
     }
 
     private String expectedUrl = "https://www.saucedemo.com/checkout-complete.html";
+    private String expectedCompleteHeader = "Thank you for your order!";
 
     @FindBy(className = "complete-header")
     private WebElement completePurchaseHeader ;
@@ -19,8 +20,7 @@ public class CompletePage {
     public void checkCurrentUrl() {
         Assertions.assertEquals(driver.getCurrentUrl(), expectedUrl);
     }
-
     public void checkCompleteHeader() {
-        Assertions.assertEquals("Thank you for your order!", completePurchaseHeader.getText());
+        Assertions.assertEquals(expectedCompleteHeader, completePurchaseHeader.getText());
     }
 }
