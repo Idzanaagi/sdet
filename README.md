@@ -14,7 +14,9 @@
 
 #### Установка и запуск (windows 11, IntelliJ IDEA):
 - склонировать этот репозиторий;
-- открыть проект;
+- открыть проект в IDE;
+- перейти в src/test/webdriver/WebDriverSetting 
+- :exclamation: заменить захардкоженный путь до драйвера на тот, по которому лежит драйвер у вас (второй аргумент System.setProperty);
 - перейти в src/test/java/tests/TestClass;
 - запустить тесты (Shift+f10).
 
